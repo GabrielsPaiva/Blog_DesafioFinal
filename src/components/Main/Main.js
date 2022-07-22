@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// images
-import perfil from '../../assets/perfilPhoto.png'
-import introImage from '../../assets/tetrisBricks.png'
-
 const Div = styled.div`
 background-color: #213260;
 display: flex;
@@ -24,9 +20,6 @@ border-radius: 70%;
 margin-left: 10vw;
 width: 400px;
 height: 400px;
-`
-const PerfilImage = styled.img`
-width: 70%;
 `
 const IntroDiv = styled.div`
 background-color: blue;

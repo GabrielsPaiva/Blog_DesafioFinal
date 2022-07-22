@@ -2,7 +2,6 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import {
   BrowserRouter as Router,
-  Link,
   Routes,
   Route,
 } from 'react-router-dom'
