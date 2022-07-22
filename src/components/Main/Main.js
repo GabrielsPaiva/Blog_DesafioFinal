@@ -22,7 +22,6 @@ width: 400px;
 height: 400px;
 `
 const IntroDiv = styled.div`
-background-color: blue;
 background-image: url('https://thumbs.gfycat.com/FondIncompleteHuemul-max-1mb.gif');
 background-size: contain;
 background-repeat: no-repeat;
