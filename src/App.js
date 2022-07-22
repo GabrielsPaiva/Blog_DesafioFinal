@@ -1,6 +1,16 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import {
+  BrowserRouter as Router,
+  Link,
+  Routes,
+  Route,
+} from 'react-router-dom'
+
+// components
 import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Portfolio from './components/Portfolio/Portfolio';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -13,10 +23,15 @@ const GlobalStyle = createGlobalStyle`
 export default class App extends React.Component {
   render() {
     return (
-      <div>
+      <Router>
         <GlobalStyle/>
         <Header/>
-      </div>
+
+        <Routes>
+          <Route path="/" element={<Main />}/>
+          <Route path="/portfolio" element={<Portfolio />}/>
+        </Routes>
+      </Router>
     );
   }
 }
