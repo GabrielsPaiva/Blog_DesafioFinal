@@ -15,10 +15,14 @@ align-items: center;
 font-family: 'Montserrat', sans-serif;
 width: 100%;
 height: 10em;
+
+@media(max-width: 425px) {
+
+}
 `
 const HeaderLogo = styled.h2`
 font-family: 'Indie Flower', 'cursive';
-font-size: 45px;
+font-size: 2.4vw;
 margin-left: 4vw;
 width: 45%;
 a{
@@ -26,9 +30,16 @@ a{
     text-decoration: none;
 }
 
-${media.lessThan('medium')`
-font-size: 30px;
-`}
+@media(max-width: 1024px) {
+    font-size: 3vw;
+}
+@media(max-width: 768px) {
+    font-size: 4.5vw;
+}
+@media(max-width: 425px) {
+    font-size: 4.4vw;
+    margin-bottom: 2em;
+}
 `
 const NavBar = styled.nav`
 background: #19274e;
@@ -58,7 +69,6 @@ a{
 &:hover{
     border: solid 5px #0a1026;
 }
-
 ${media.lessThan('medium')`
 font-size: 20px;
 `}
@@ -74,11 +84,11 @@ export default function Header() {
 
         } else {
             return (
-                    <NavBar>
-                        <NavItems><Link to='/portfolio'>Portfolio</Link></NavItems>
-                        <NavItems><a href='https://github.com/GabrielsPaiva'>Github</a></NavItems>
-                        <NavItems><a href='https://gabrielsobjetivosdobairro.netlify.app'>Objetivos Locais</a></NavItems>
-                    </NavBar>
+                <NavBar>
+                    <NavItems><Link to='/portfolio'>Portfolio</Link></NavItems>
+                    <NavItems><a href='https://github.com/GabrielsPaiva'>Github</a></NavItems>
+                    <NavItems><a href='https://gabrielsobjetivosdobairro.netlify.app'>Objetivos Locais</a></NavItems>
+                </NavBar>
             )
         }
     }

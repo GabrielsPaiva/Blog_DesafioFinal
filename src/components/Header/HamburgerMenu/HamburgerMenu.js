@@ -12,6 +12,11 @@ margin: 22% 5% 0 0;
 width: 30%;
 height: 250px;
 transition: 900ms;
+z-index: 1;
+
+@media(max-width: 768px) {
+    margin-top: 9em;
+}
 `
 
 // hamburger menu
